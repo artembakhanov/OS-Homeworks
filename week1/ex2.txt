@@ -1,0 +1,14 @@
+    1  echo hello world
+    2  python
+    3  history
+    4  ls ex1.txt
+    5  man man
+    6  man -h | head
+    7  man -h
+    8  man -h | head 10
+    9  man -h | head -n 10\
+   10  history
+   11  history > ex2.txt
+   12  nano ex2.txt
+   13  nano ex2.txt
+   14  history > ex2.txt
