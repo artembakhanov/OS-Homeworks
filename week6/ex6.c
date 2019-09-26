@@ -68,7 +68,7 @@ int main() {
 	waitpid(pid2, NULL, 0);
 	
 	printf("[P] waiting till ch1 is finished...\n");
-	waitpid(pid1, NULL, 0);
+	waitpid(pid1, NULL, WUNTRACED);
 	printf("[P] exiting...\n");
 	return 0;
 }

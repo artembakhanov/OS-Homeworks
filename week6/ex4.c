@@ -28,10 +28,15 @@ void su1hand(int signal) {
 int main() {
 	printf("Started working on really hard task...\n");
 	fflush(stdout);
-	signal(SIGINT, sihand);	
-	signal(SIGSTOP, sshand);	
-	signal(SIGKILL, skhand);	
-	signal(SIGUSR1, su1hand);	
+	struct sigaction siact = { sihand };
+	struct sigaction ssact = { sshand };
+	struct sigaction skgact = { skhand };
+	struct sigaction su1act = { su1hand };
+	
+	sigaction(SIGINT, &siact, NULL);	
+	sigaction(SIGSTOP, &ssact, NULL);	
+	sigaction(SIGKILL, &skgact, NULL);	
+	sigaction(SIGUSR1, &su1act, NULL);	
 	while(1);
 
 	return 0;

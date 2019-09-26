@@ -9,9 +9,10 @@ void sihand(int signal) {
 
 
 int main() {
+	struct sigaction sigact = { sihand };
 	printf("Started working on really hard task...\n");
 	fflush(stdout);
-	signal(SIGINT, sihand);	
+	sigaction(SIGINT, &sigact, NULL);	
 	while(1);
 
 	return 0;
