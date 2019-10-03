@@ -1,0 +1,2 @@
+   text	   data	    bss	    dec	    hex	filename
+   3227	    664	     16	   3907	    f43	/home/artembakhanov/OS Homeworks/week6/ex6
