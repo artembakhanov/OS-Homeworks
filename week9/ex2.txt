@@ -1,0 +1,7 @@
+Sequence that increase hit/miss ratio is '1 2 3 4 5 5 4 3 2 1' for the number of page frames equals to 4.
+In this case we will have only 6 misses (1, 2, 3, 4, 5, and 1 in the end). Other 5, 4, 3, 2 lead to hits.
+
+The worst sequence is '1 2 3 4 5 1 2 3 4 5' for 5 (number of page frames).
+We have 10 misses and 0 hits.
+
+So it is better to access the most recently used frames in order to decrease the number of misses.
