@@ -1,0 +1,11 @@
+artembakhanov@artem-pc ~/O/week10> touch ../week1/file.txt
+artembakhanov@artem-pc ~/O/week10> link ../week1/file.txt _ex2.txt
+artembakhanov@artem-pc ~/O/week10> ls -i ../week1/file.txt
+3170179 ../week1/file.txt
+artembakhanov@artem-pc ~/O/week10> find . -inum 3170179
+./_ex2.txt
+artembakhanov@artem-pc ~/O/week10> find . -inum 3170179 -exec rm {} \;
+artembakhanov@artem-pc ~/O/week10> find . -inum 3170179
+artembakhanov@artem-pc ~/O/week10> find -inum 3170179
+artembakhanov@artem-pc ~/O/week10> find .. -inum 3170179
+../week1/file.txt

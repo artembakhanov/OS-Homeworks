@@ -1,0 +1,13 @@
+artembakhanov@artem-pc ~/O/week10> touch _ex3.txt
+artembakhanov@artem-pc ~/O/week10> chmod u-x,g-x,o-x _ex3.txt
+artembakhanov@artem-pc ~/O/week10> ls -l _ex3.txt
+-rw-r--r-- 1 artembakhanov artembakhanov 0 Oct 24 23:09 _ex3.txt
+artembakhanov@artem-pc ~/O/week10> chmod u+rwx,o+rwx _ex3.txt 
+artembakhanov@artem-pc ~/O/week10> ls -l _ex3.txt
+-rwxr--rwx 1 artembakhanov artembakhanov 0 Oct 24 23:09 _ex3.txt*
+artembakhanov@artem-pc ~/O/week10> chmod g+u _ex3.txt
+artembakhanov@artem-pc ~/O/week10> ls -l _ex3.txt
+-rwxrwxrwx 1 artembakhanov artembakhanov 0 Oct 24 23:09 _ex3.txt*
+# 660 # -rw-rw---- # owner and their group can read and write, other users have no permissions
+# 775 # -rwxrwxr-x # owner and their group can read, write, and execute, other users have read and execute permissions
+# 777 # -rwxrwxrwx # everyone can write, read, and execute
