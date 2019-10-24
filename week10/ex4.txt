@@ -1,0 +1,4 @@
+inode 3672041
+./tmp/link1
+./tmp/file1
+
