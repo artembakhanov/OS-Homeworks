@@ -1,0 +1,3 @@
+The first program prints "Hello" twice because printf is line buffered and executing fork() new exact dublicate is created. Buffer is also included there.
+Since both proccesses have "Hello" in their buffers it is printed out twice.
+In the second program buffer is flushed before forking. So just Hello and two empty lines will be printed out.
